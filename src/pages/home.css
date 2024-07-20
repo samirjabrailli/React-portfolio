@@ -1,0 +1,15 @@
+.card-link{
+    text-decoration: none;
+}
+
+.card img {
+    max-width: 540px;
+}
+
+.title{
+    font-size: 20px;
+}
+
+.title-about{
+    font-size: 20px;
+}
