@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
 import About from './pages/About'
@@ -22,13 +22,16 @@ function App() {
    <div>
      <Header />
       <Routes>
+      
         <Route  path='/home' element={<Home />}/>
         <Route  path='/about' element={<About/>}/>
         <Route  path='/contact' element={<Contact />}/>
         <Route path='/aboutme' element={<Aboutme />}/>
+        <Route path='*' element={<Navigate to="/home"/>}></Route>
+        
+
       </Routes>
       <Footer />
-
    </div>
   )
 }
